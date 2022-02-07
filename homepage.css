@@ -1,10 +1,17 @@
 body {
     background-color: purple;
   }
-h1 {
+h1,h2 {
     text-align: center;
 }
 a {
     text-align: center;
     color: gray;
+}
+p {
+    color: honeydew;
+    text-align: center;
+}
+ul,li {
+    text-align: center;
 }
