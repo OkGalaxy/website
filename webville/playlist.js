@@ -10,3 +10,14 @@ function init() {
 function handleButtonClick() {
     alert("Button was clicked!");
 }
+function handleButtonClick() {
+    var textInput = document.getElementById("songTextInput");
+    var songName = textInput.value;
+    if (songName == "") {
+        alert("Adding " + songName);
+    } else {
+        alert("Adding " + songName);
+    }
+}
+
+        
