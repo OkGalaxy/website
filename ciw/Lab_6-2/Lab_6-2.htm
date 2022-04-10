@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<link rel="stylesheet" href="LAb_6-2.css">
+
 <title>Lab 6-2</title>
 
 <script>
@@ -14,21 +16,31 @@
   function myFunction() {
     alert("The function has been called.");
   }
-
+  function myFunction(arg1) {
+        alert("Hello how are you? " + arg1);
+        return "I am very tired";
+  }
+  function myFunction2() {
+    alert("I like to play games like osu and League");
+    return("Im also hungry")
+  }      
+  
 </script>
 
 </head>
 
 <body>
 
-<h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
+<button>Advanced HTML5 and CSS3 Specialist</button>
 <hr/>
 
 <!-- Add an onclick event handler to call the function -->
-
 <form name="myForm">
-<input type="button" VALUE="Call Function" />
+  <input type="button" value="Introduction message" onclick="alert(myFunction('My name is Chris'));" />
+  <input type="button" value="Introduction message part 2" onclick="alert(myFunction2('I enjoy coding and video games'));" />
+
 </form>
+<p>This will display a pop-up message ^^^</p>
 <footer>
   <div class="side-block" id="disclaimer">
     <a href="https://git.io/vVSYL">Typeset with HTML / CSS</a><br>
