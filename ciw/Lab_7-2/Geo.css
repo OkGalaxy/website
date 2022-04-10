@@ -1,0 +1,6 @@
+body {
+    background-color: aqua;
+}
+html,p {
+    border: 10px red;
+}
