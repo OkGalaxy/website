@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8"/>
+<link rel="stylesheet" href="Canvas.css">
 <title>HTML5 Canvas API Example</title>
 </head>
 <body>
 <h1>CIW Advanced HTML5 and CSS3 Specialist</h1>
-<h2>Canvas Demonstration</h2>
+<h2>HE IS WATCHING</h2>
 <canvas id="canvas" width="200" height="200"></canvas>
 <script>
 	// Code adapted from https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes
@@ -18,19 +19,38 @@
 
 		    ctx.beginPath();
 		    ctx.lineWidth = 3;
-		    ctx.fillStyle = "yellow";
+		    ctx.fillStyle = "purple";
 		    ctx.arc(75,75,50,0,Math.PI*2,true); // Outer circle
 		    ctx.fill();
 		    ctx.moveTo(110,75);
 		    ctx.arc(75,75,35,0,Math.PI,false);   // Mouth (clockwise)
-		    ctx.moveTo(65,65);
+		    ctx.moveTo(65,80);
 		    ctx.arc(60,65,5,0,Math.PI*2,true);  // Left eye
-		    ctx.moveTo(95,65);
+		    ctx.moveTo(95,80);
 		    ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
 		    ctx.stroke();
 		  }
 	}
 	window.onload = draw;
 </script>
+<footer>
+	<div class="side-block" id="disclaimer">
+	  <a href="https://git.io/vVSYL">Typeset with HTML / CSS</a><br>
+	  <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+	  <a id="vLink2"><strong> CSS </strong> Valid! </a>
+	</div>
+  </aside>
+  <script>
+	var loc = window.location.href;
+	var HTMLlinkStr = 'http://validator.w3.org/check?uri=' + loc;
+	var CSSlinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+					  loc + '?profile=css3';
+  
+	var vLink1 = document.getElementById("vLink1");
+	vLink1.setAttribute("href", HTMLlinkStr);
+	var vLink2 = document.getElementById("vLink2");
+	vLink2.setAttribute("href", CSSlinkStr);
+  </script>
+</footer>
 </body>
 </html>
